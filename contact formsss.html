@@ -1,0 +1,68 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid;
+  border-radius: 7px;
+  box-sizing: border-box;
+  margin-top: 3px;
+  margin-bottom: 10px;
+  resize: horizontal;
+}
+
+input[type=submit] {
+  background-color: green;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: grey;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: grey;
+  padding: 20px
+  }
+</style>
+</head>
+<body>
+
+<h1>Contact Form</h1>
+
+<div class="container">
+  <form action="www.nile university.com">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="state of origin">state of origin</label>
+    <select id="state of origin" name="state of origin">
+      <option value="kano">kano</option>
+      <option value="kaduna">kaduna</option>
+      <option value="ogun">ogun</option>
+      <option value="katstina">katsina</option>
+      <option value="maiduguri">maiduguri</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something about yourself.." style="height:100px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
